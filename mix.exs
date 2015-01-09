@@ -3,7 +3,7 @@ defmodule WebDriver.Mixfile do
 
   def project do
     [ app: :webdriver,
-      version: "0.7.0",
+      version: "0.7.1",
       description: "Webdriver protocol for driving web browsers.",
       source_url: "https://github.com/stuart/elixir-webdriver",
       homepage_url: "http://stuart.github.io/elixir-webdriver",
@@ -31,7 +31,7 @@ defmodule WebDriver.Mixfile do
   defp deps do
     [
       {:ibrowse,   github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
-      {:httpotion, "~> 0.2.4"},
+      {:httpotion, "~> 1.0.0"},
       {:jazz,      "~> 0.2.0"},
       {:mock,      github: "jjh42/mock", only: :test},
       {:earmark,   "~>0.1.10", only: :dev},
