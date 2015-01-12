@@ -40,7 +40,7 @@ defmodule WebDriver.PhantomJS.Port do
   end
 
   def arguments state do
-    ["--webdriver=#{state.http_port}"]
+    ["--webdriver=#{state.http_port}", "--ignore-ssl-errors=yes", "--ssl-protocol=TLSv1", "--web-security=false"]
   end
 
   def wait_for_start state do
